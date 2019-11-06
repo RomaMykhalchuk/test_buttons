@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.button {
+  &:hover {
+    background:greenyellow;
+  };
+  &:active {
+    background:gold;
+  };
+  &:disabled {
+  background:red;
+  };
+  width: 100px;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  background:#406AD7;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+}
