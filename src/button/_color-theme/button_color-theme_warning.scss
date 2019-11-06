@@ -1,3 +1,11 @@
 .button_color-theme_warning {
-  background: saddlebrown;
+  background:rgba(254, 239, 179, 1);
+  color:rgba(159, 96, 0, 1);
+  &:hover {
+    background:rgb(216, 135, 13);
+    
+  };
+  &:active {
+    background:rgb(192, 117, 3);
+  };
 }

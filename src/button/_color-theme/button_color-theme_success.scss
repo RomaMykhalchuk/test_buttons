@@ -1,3 +1,11 @@
 .button_color-theme_success {
-  background: salmon;
+  background:rgba(223, 242, 191, 1);
+  color:rgba(79, 138, 16, 1);
+  &:hover {
+    background:rgb(104, 184, 20);
+    
+  };
+  &:active {
+    background:rgb(62, 109, 12);
+  };
 }
