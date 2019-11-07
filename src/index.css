@@ -11,6 +11,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+select {
+  font-family: 'Poppins', sans-serif;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+  border-radius: 2px;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  padding: 2px;
+  margin: 3px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

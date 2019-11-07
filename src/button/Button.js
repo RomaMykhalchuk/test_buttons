@@ -1,21 +1,19 @@
-import React from 'react';
-import './Button.scss';
-import './_size/button_size_s.scss';
-import './_size/button_size_m.scss';
-import './_size/button_size_l.scss';
-import './_link/button_link_default.scss';
-import './_color-theme/button_color-theme_success.scss';
-import './_color-theme/button_color-theme_error.scss';
-import './_color-theme/button_color-theme_warning.scss';
-
-
+import React from "react";
+import "./Button.scss";
+import "./_size/button_size_s.scss";
+import "./_size/button_size_m.scss";
+import "./_size/button_size_l.scss";
+import "./_link/button_link_default.scss";
+import "./_color-theme/button_color-theme_success.scss";
+import "./_color-theme/button_color-theme_error.scss";
+import "./_color-theme/button_color-theme_warning.scss";
 
 const Button = props => {
   let currentThemeMode = "";
   let currentSize = "";
   let currentLink = props.isLink;
-  
-switch (props.colorTheme) {
+
+  switch (props.colorTheme) {
     case "success":
       currentThemeMode = "button_color-theme_success";
       break;
@@ -43,10 +41,19 @@ switch (props.colorTheme) {
   }
 
   return (
-    <div> 
-    
+    <div>
       <button className={`button ${currentThemeMode} ${currentSize}`}>
-   {currentLink ? <a href = 'https://football.ua/' className='button_link_default'>Click</a> : 'Click'}
+        {currentLink ? (
+          <a
+            href="https://football.ua/"
+            className="button_link_default"
+            target="_blank"
+          >
+            Click
+          </a>
+        ) : (
+          "Click"
+        )}
       </button>
     </div>
   );

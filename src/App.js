@@ -7,36 +7,33 @@ function App() {
   const [currentTheme, setCurrentTheme] = useState("");
   const [currentSize, setCurrentSize] = useState("");
 
-
-return (
+  return (
     <div className="App">
       <Button
-
         buttonSize={currentSize}
         isLink={link}
         colorTheme={currentTheme}
-       
       />
       <input
         type="radio"
-        id="radioButton1"
-        name="a"
+        id="firstRadioButton"
+        name="radioButton"
         value="https://football.ua/"
         onClick={e => {
           setLink(e.target.value);
         }}
       />
-      <label htmlFor="radioButton1">Set the button as a link</label>
+      <label htmlFor="firstRadioButton">Set the button as a link</label>
       <input
         type="radio"
-        id="radioButton2"
-        name="a"
+        id="secondRadioButton"
+        name="radioButton"
         value=""
         onClick={e => {
           setLink(e.target.value);
         }}
       />
-      <label htmlFor="radioButton2">Set the button as not a link</label>
+      <label htmlFor="secondRadioButton">Set the button as not a link</label>
       <select
         onChange={e => {
           setCurrentTheme(e.target.value);
